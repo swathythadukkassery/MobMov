@@ -22,3 +22,7 @@ Running the tests
 
 	truffle:Truffle framework is what allows us to build dApps on the ethereum blockchain.This file is the main 	configuration file for all the above mention directories.
 
+Ganache provides us with fake ethers a number of accounts.Each account represents a node.Thus when a transaction is made the corresponding changes will be reflected in the ganache.
+
+ChangeOfOwnership.deployed().then(function(instance) {app = instance})
+Here changeOfOwnership is the name of the variable we created in the migration file.We retreived a deployed instance of the contract with the deployed function and assigned it to an app variable inside the promises callback function.
